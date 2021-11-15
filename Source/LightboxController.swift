@@ -317,6 +317,7 @@ open class LightboxController: UIViewController {
     
     fileprivate func loadDynamicBackground(_ image: UIImage) {
         backgroundView.image = image
+        backgroundView.contentMode = .scaleAspectFill
         backgroundView.layer.add(CATransition(), forKey: "fade")
     }
     
