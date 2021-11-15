@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "318e319998bf555c3e914d5c3adb6da05af86a32",
+          "version": "7.1.1"
+        }
+      },
+      {
+        "package": "ImageManager",
+        "repositoryURL": "https://nebula.orchidpharmed.com/Orchid%20Pharmed/Nova/_git/Nova.OnlineVisit.iOS.ImageManager",
+        "state": {
+          "branch": null,
+          "revision": "a01b30258302355511f9605c0ad6b5a9ebb3ec7b",
+          "version": "0.1.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

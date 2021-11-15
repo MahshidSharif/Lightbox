@@ -1,7 +1,7 @@
+
 import UIKit
 
-public protocol FooterViewDelegate: class {
-
+public protocol FooterViewDelegate: AnyObject {
   func footerView(_ footerView: FooterView, didExpand expanded: Bool)
 }
 
@@ -10,7 +10,6 @@ open class FooterView: UIView {
   open fileprivate(set) lazy var infoLabel: InfoLabel = { [unowned self] in
     let label = InfoLabel(text: "")
     label.isHidden = !LightboxConfig.InfoLabel.enabled
-
     label.textColor = LightboxConfig.InfoLabel.textColor
     label.isUserInteractionEnabled = true
     label.delegate = self
@@ -43,7 +42,7 @@ open class FooterView: UIView {
     super.init(frame: CGRect.zero)
 
     backgroundColor = UIColor.clear
-    _ = addGradientLayer(gradientColors)
+//    _ = addGradientLayer(gradientColors)
 
     [pageLabel, infoLabel, separatorView].forEach { addSubview($0) }
   }
@@ -69,11 +68,11 @@ open class FooterView: UIView {
   func updateText(_ text: String) {
     infoLabel.fullText = text
 
-    if text.isEmpty {
-      _ = removeGradientLayer()
-    } else if !infoLabel.expanded {
-      _ = addGradientLayer(gradientColors)
-    }
+//    if text.isEmpty {
+//      _ = removeGradientLayer()
+//    } else if !infoLabel.expanded {
+//      _ = addGradientLayer(gradientColors)
+//    }
   }
 
   open override func layoutSubviews() {
@@ -119,7 +118,7 @@ extension FooterView: LayoutConfigurable {
 extension FooterView: InfoLabelDelegate {
 
   public func infoLabel(_ infoLabel: InfoLabel, didExpand expanded: Bool) {
-    _ = (expanded || infoLabel.fullText.isEmpty) ? removeGradientLayer() : addGradientLayer(gradientColors)
+//    _ = (expanded || infoLabel.fullText.isEmpty) ? removeGradientLayer() : addGradientLayer(gradientColors)
     delegate?.footerView(self, didExpand: expanded)
   }
 }
