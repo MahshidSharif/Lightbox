@@ -1,7 +1,6 @@
 import UIKit
 import AVKit
 import AVFoundation
-import ImageManager
 import StyleKit
 
 public class LightboxConfig {

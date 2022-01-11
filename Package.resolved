@@ -2,6 +2,33 @@
   "object": {
     "pins": [
       {
+        "package": "ExtensionKit",
+        "repositoryURL": "https://github.com/MohammadRezaAnsari/ExtensionKit.git",
+        "state": {
+          "branch": null,
+          "revision": "9751d40fe441be57678588f5f5bb46ab6197390f",
+          "version": "1.9.0"
+        }
+      },
+      {
+        "package": "FloatingPanel",
+        "repositoryURL": "https://github.com/scenee/FloatingPanel",
+        "state": {
+          "branch": null,
+          "revision": "0fbbbc8d99b4dfe58bb1dd704d14b45f35b46584",
+          "version": "2.5.1"
+        }
+      },
+      {
+        "package": "FontBlaster",
+        "repositoryURL": "https://github.com/ArtSabintsev/FontBlaster.git",
+        "state": {
+          "branch": null,
+          "revision": "a7c05d963f1a90ed558c3f8c7a663c097498a27d",
+          "version": "5.2.0"
+        }
+      },
+      {
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
         "state": {
@@ -11,12 +38,12 @@
         }
       },
       {
-        "package": "ImageManager",
-        "repositoryURL": "https://nebula.orchidpharmed.com/Orchid%20Pharmed/Nova/_git/Nova.OnlineVisit.iOS.ImageManager",
+        "package": "AUIKit",
+        "repositoryURL": "https://nebula.orchidpharmed.com/Orchid%20Pharmed/Nova/_git/Nova.OnlineVisit.iOS.AUIKit",
         "state": {
           "branch": null,
-          "revision": "a01b30258302355511f9605c0ad6b5a9ebb3ec7b",
-          "version": "0.1.7"
+          "revision": "a791e9e741b86c3aa3c63ddd7afb83ae1e87e53c",
+          "version": "0.9.2"
         }
       }
     ]

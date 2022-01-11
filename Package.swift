@@ -12,10 +12,6 @@ let package = Package(
     
     dependencies: [
         .package(
-            url: "https://nebula.orchidpharmed.com/Orchid%20Pharmed/Nova/_git/Nova.OnlineVisit.iOS.ImageManager",
-            from: "0.1.6"),
-        
-        .package(
             url: "https://nebula.orchidpharmed.com/Orchid%20Pharmed/Nova/_git/Nova.OnlineVisit.iOS.AUIKit",
             from: "0.8.4"),
     ],
@@ -23,7 +19,7 @@ let package = Package(
     targets: [
         .target(
             name: "Lightbox",
-            dependencies: ["ImageManager", "AUIKit"],
+            dependencies: ["AUIKit"],
             path: "Source")
     ],
     swiftLanguageVersions: [.v5]

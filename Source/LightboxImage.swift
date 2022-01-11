@@ -1,4 +1,5 @@
 import UIKit
+import AUIKit
 
 open class LightboxImage {
     
@@ -39,7 +40,8 @@ open class LightboxImage {
             completion?(image)
             
         } else if let imageURL = imageURL {
-            imageView.setImage(with: imageURL, placeholder: nil)
+            let image = Image.remote(imageURL.absoluteString, placeholder: nil, size: .none)
+            image.setImage(for: imageView)
             completion?(nil)
             
         } else if let imageClosure = imageClosure {
